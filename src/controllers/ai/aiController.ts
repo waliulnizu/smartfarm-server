@@ -22,7 +22,7 @@ async function groqChat(messages: { role: string; content: string }[]): Promise<
     throw new Error(`Groq API error ${res.status}: ${err}`);
   }
 
-  const data = await res.json();
+  const data: any = await res.json();
   return data.choices[0]?.message?.content || "";
 }
 
