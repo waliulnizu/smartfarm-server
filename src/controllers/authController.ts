@@ -199,8 +199,57 @@ export async function me(req: Request, res: Response): Promise<void> {
       return;
     }
 
-    res.status(200).json({ id: user._id, name: user.name, email: user.email, role: user.role });
+    res.status(200).json({ id: user._id, name: user.name, email: user.email, role: user.role, avatar: user.avatar, createdAt: user.createdAt });
   } catch {
+    res.status(500).json({ message: "Server error" });
+  }
+}
+
+export async function updateProfile(req: Request, res: Response): Promise<void> {
+  try {
+    const userId = (req as any).user?.userId;
+    if (!userId) {
+      res.status(401).json({ message: "Not authenticated" });
+      return;
+    }
+
+    const { name, email, currentPassword, newPassword } = req.body;
+    const user = await User.findById(userId).select("+password");
+    if (!user) {
+      res.status(404).json({ message: "User not found" });
+      return;
+    }
+
+    if (name) user.name = name;
+    if (email && email !== user.email) {
+      const existing = await User.findOne({ email: email.toLowerCase(), _id: { $ne: userId } });
+      if (existing) {
+        res.status(409).json({ message: "Email already in use" });
+        return;
+      }
+      user.email = email.toLowerCase();
+    }
+
+    if (newPassword) {
+      if (!currentPassword) {
+        res.status(400).json({ message: "Current password is required" });
+        return;
+      }
+      if (!user.password) {
+        res.status(400).json({ message: "Cannot change password for Google login accounts" });
+        return;
+      }
+      const isMatch = await bcrypt.compare(currentPassword, user.password);
+      if (!isMatch) {
+        res.status(401).json({ message: "Current password is incorrect" });
+        return;
+      }
+      user.password = await bcrypt.hash(newPassword, 12);
+    }
+
+    await user.save();
+    res.status(200).json({ id: user._id, name: user.name, email: user.email, role: user.role, avatar: user.avatar, createdAt: user.createdAt });
+  } catch (error) {
     res.status(500).json({ message: "Server error" });
   }
 }
