@@ -1,0 +1,29 @@
+{
+  "animals": [
+    {"type":"Duck","identityNumberOrBatchName":"Khaki-01","ringNumber":"R-D101","identificationType":"leg-ring","breed":"Khaki Campbell","entryWeight":1.8,"averageFeedKg":0.15,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Khaki-02","ringNumber":"R-D102","identificationType":"leg-ring","breed":"Khaki Campbell","entryWeight":1.9,"averageFeedKg":0.16,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Khaki-03","ringNumber":"R-D103","identificationType":"leg-ring","breed":"Khaki Campbell","entryWeight":1.7,"averageFeedKg":0.14,"status":"sick"},
+    {"type":"Duck","identityNumberOrBatchName":"Khaki-04","ringNumber":"R-D104","identificationType":"leg-ring","breed":"Khaki Campbell","entryWeight":2.0,"averageFeedKg":0.17,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Khaki-05","ringNumber":"R-D105","identificationType":"leg-ring","breed":"Khaki Campbell","entryWeight":1.8,"averageFeedKg":0.15,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Pekin-01","ringNumber":"R-D106","identificationType":"leg-ring","breed":"Pekin","entryWeight":2.5,"averageFeedKg":0.20,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Pekin-02","ringNumber":"R-D107","identificationType":"leg-ring","breed":"Pekin","entryWeight":2.6,"averageFeedKg":0.21,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Pekin-03","ringNumber":"R-D108","identificationType":"leg-ring","breed":"Pekin","entryWeight":2.4,"averageFeedKg":0.19,"status":"sick"},
+    {"type":"Duck","identityNumberOrBatchName":"Pekin-04","ringNumber":"R-D109","identificationType":"leg-ring","breed":"Pekin","entryWeight":2.7,"averageFeedKg":0.22,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Pekin-05","ringNumber":"R-D110","identificationType":"leg-ring","breed":"Pekin","entryWeight":2.5,"averageFeedKg":0.20,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Indian-01","ringNumber":"R-D111","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.5,"averageFeedKg":0.12,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Indian-02","ringNumber":"R-D112","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.6,"averageFeedKg":0.13,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Indian-03","ringNumber":"R-D113","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.4,"averageFeedKg":0.11,"status":"sick"},
+    {"type":"Duck","identityNumberOrBatchName":"Indian-04","ringNumber":"R-D114","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.5,"averageFeedKg":0.12,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Indian-05","ringNumber":"R-D115","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.6,"averageFeedKg":0.13,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Muscovy-01","ringNumber":"R-D116","identificationType":"leg-ring","breed":"Muscovy","entryWeight":3.0,"averageFeedKg":0.22,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Muscovy-02","ringNumber":"R-D117","identificationType":"leg-ring","breed":"Muscovy","entryWeight":3.2,"averageFeedKg":0.23,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Muscovy-03","ringNumber":"R-D118","identificationType":"leg-ring","breed":"Muscovy","entryWeight":2.8,"averageFeedKg":0.21,"status":"sick"},
+    {"type":"Duck","identityNumberOrBatchName":"Muscovy-04","ringNumber":"R-D119","identificationType":"leg-ring","breed":"Muscovy","entryWeight":3.1,"averageFeedKg":0.22,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Muscovy-05","ringNumber":"R-D120","identificationType":"leg-ring","breed":"Muscovy","entryWeight":3.3,"averageFeedKg":0.24,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Runner-01","ringNumber":"R-D121","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.4,"averageFeedKg":0.11,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Runner-02","ringNumber":"R-D122","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.5,"averageFeedKg":0.12,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Runner-03","ringNumber":"R-D123","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.3,"averageFeedKg":0.10,"status":"sick"},
+    {"type":"Duck","identityNumberOrBatchName":"Runner-04","ringNumber":"R-D124","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.4,"averageFeedKg":0.11,"status":"healthy"},
+    {"type":"Duck","identityNumberOrBatchName":"Runner-05","ringNumber":"R-D125","identificationType":"leg-ring","breed":"Indian Runner","entryWeight":1.6,"averageFeedKg":0.13,"status":"healthy"}
+  ]
+}
